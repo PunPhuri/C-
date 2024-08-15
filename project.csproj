@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D2D68CD-3A56-452B-898A-9BDAC04805EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo1-icon_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.3.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutdev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutdev.Designer.cs">
+      <DependentUpon>aboutdev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="additemad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="additemad.Designer.cs">
+      <DependentUpon>additemad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstock.Designer.cs">
+      <DependentUpon>addstock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminverify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminverify.Designer.cs">
+      <DependentUpon>adminverify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminwindow.Designer.cs">
+      <DependentUpon>adminwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="astrox100zzinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="astrox100zzinfo.Designer.cs">
+      <DependentUpon>astrox100zzinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cartwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartwindow.Designer.cs">
+      <DependentUpon>Cartwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeinac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeinac.Designer.cs">
+      <DependentUpon>changeinac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changewindow1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changewindow1.Designer.cs">
+      <DependentUpon>changewindow1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changewindow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changewindow2.Designer.cs">
+      <DependentUpon>changewindow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hisroryrejectuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hisroryrejectuser.Designer.cs">
+      <DependentUpon>hisroryrejectuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historyadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historyadmin.Designer.cs">
+      <DependentUpon>historyadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historyrejectadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historyrejectadmin.Designer.cs">
+      <DependentUpon>historyrejectadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="historyuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="historyuser.Designer.cs">
+      <DependentUpon>historyuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeads.Designer.cs">
+      <DependentUpon>homeads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item_frames.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="item_frames.Designer.cs">
+      <DependentUpon>item_frames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logadmin.Designer.cs">
+      <DependentUpon>logadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginwindow.Designer.cs">
+      <DependentUpon>loginwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="racketyonex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="racketyonex.Designer.cs">
+      <DependentUpon>racketyonex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regiswidow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regiswidow.Designer.cs">
+      <DependentUpon>regiswidow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="summary.Designer.cs">
+      <DependentUpon>summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userverify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userverify.Designer.cs">
+      <DependentUpon>userverify.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aboutdev.resx">
+      <DependentUpon>aboutdev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="additemad.resx">
+      <DependentUpon>additemad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstock.resx">
+      <DependentUpon>addstock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminverify.resx">
+      <DependentUpon>adminverify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminwindow.resx">
+      <DependentUpon>adminwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="astrox100zzinfo.resx">
+      <DependentUpon>astrox100zzinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cartwindow.resx">
+      <DependentUpon>Cartwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeinac.resx">
+      <DependentUpon>changeinac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changewindow1.resx">
+      <DependentUpon>changewindow1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changewindow2.resx">
+      <DependentUpon>changewindow2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hisroryrejectuser.resx">
+      <DependentUpon>hisroryrejectuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historyadmin.resx">
+      <DependentUpon>historyadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historyrejectadmin.resx">
+      <DependentUpon>historyrejectadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="historyuser.resx">
+      <DependentUpon>historyuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeads.resx">
+      <DependentUpon>homeads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_frames.resx">
+      <DependentUpon>item_frames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logadmin.resx">
+      <DependentUpon>logadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginwindow.resx">
+      <DependentUpon>loginwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="racketyonex.resx">
+      <DependentUpon>racketyonex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regiswidow.resx">
+      <DependentUpon>regiswidow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="summary.resx">
+      <DependentUpon>summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userverify.resx">
+      <DependentUpon>userverify.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo1-icon.ico" />
+    <Content Include="Logo1-icon_1.ico" />
+    <Content Include="Logo1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
